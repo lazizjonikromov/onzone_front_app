@@ -24,7 +24,7 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/css/swiper-navigation.css" />
-    <title>Смартфон</title>
+    <title>Sub Category</title>
   </head>
 
   <body>
@@ -494,7 +494,7 @@
             <a href="#" class="btn">Kir yuvish mashinalari</a>
             <a href="#" class="btn">Muzlatkichlar</a>
             <a
-              href="../cooperation"
+              href="/pages/cooperation"
               class="btn btn-light d-flex align-items-center"
             >
               Hamkorlik Qilish <i class="ml-3 fas fa-handshake"></i>
@@ -510,8 +510,15 @@
       <div class="catalogTop">
         <div class="container">
           <div class="row">
+            <div class="col-12">
+              <div class="slash">
+                <a href="/">Bosh sahifa</a>
+                <a href="/pages/all-category"><span>/</span> Barcha kategoriyalar </a>
+                <a href="#!"><span>/</span> Telefonlar va gadjetlar </a>
+              </div>
+            </div>
             <div class="col-12 filterBtn">
-              <h1>Smartfonlar</h1>
+              <h1 class="w-75">Telefonlar va gadjetlar</h1>
 
               <div onclick="handleClick()" class="filter">
                 Filtrlar <span><img src="/img/filter.svg" alt="" /></span>
@@ -528,6 +535,41 @@
           <div class="row">
             <div class="col-lg-3 leftCatalog">
               <div onclick="handleClick()" class="close">x</div>
+
+              <div class="leftCards myShadow">
+                <a class="active" href="/pages/sub-category">
+                  Telefonlar va gadjetlar <i class="fas fa-angle-right"></i>
+                </a>
+                <a href="/pages/catalog/phone">
+                  Televizor/Video/Audio <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Go‘zallik va salomatlik <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Mebel <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Maishiy texnika <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Pardoz va atir buyumlar <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Kompyuterlar va orgtexnika <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Avtomobil jihozlari va uskunalari
+                  <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Oshxona texnikasi <i class="fas fa-angle-right"></i>
+                </a>
+                <a class="" href="/pages/catalog/phone">
+                  Uy va ishxona jixozlari <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+
               <h2>Narx</h2>
 
               <div
@@ -600,78 +642,15 @@
                   <span>+ Koʻproq</span> <span>- Kamroq</span>
                 </p>
               </div>
-
-              <h2>Operatsionnaya sistema</h2>
-
-              <div class="checkWrap">
-                <div class="wrap">
-                  <input type="checkbox" name="" id="android" />
-                  <label for="android">Android <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="aos" />
-                  <label for="aos">AOS <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="xiaomi" />
-                  <label for="xiaomi"
-                    >Xiaomi MIUI на основе Android <span>&#10004;</span></label
-                  >
-                </div>
-              </div>
-
-              <h2>Kolichestvo osnovnix (tilovix) kamer</h2>
-
-              <div class="checkWrap">
-                <div class="wrap">
-                  <input type="checkbox" name="" id="1" />
-                  <label for="1">1 <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="2" />
-                  <label for="2">2 <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="3" />
-                  <label for="3">3 <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="4" />
-                  <label for="4">4 <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="5" />
-                  <label for="5">5 <span>&#10004;</span></label>
-                </div>
-              </div>
-
-              <h2>Фронтальная камера</h2>
-
-              <div class="checkWrap">
-                <div class="wrap">
-                  <input type="checkbox" name="" id="10" />
-                  <label for="10">10 МП <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="20" />
-                  <label for="20">20 МП <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="30" />
-                  <label for="30">30 МП <span>&#10004;</span></label>
-                </div>
-                <div class="wrap">
-                  <input type="checkbox" name="" id="40" />
-                  <label for="40">40 МП <span>&#10004;</span></label>
-                </div>
-              </div>
-
               <div class="pop-pro-sidebar">
-                <a href="pages/catalog/phone">
+                <a href="product">
                   <img src="/img/sidebar-01.png" class="w-100" alt="" />
                 </a>
-                <a href="pages/catalog/phone" class="mt-5">
+                <a href="product" class="mt-5">
                   <img src="/img/sidebar-02.png" alt="" class="w-100" />
+                </a>
+                <a href="product" class="mt-5">
+                  <img src="/img/sidebar-03.png" alt="" class="w-100" />
                 </a>
               </div>
             </div>
@@ -696,7 +675,7 @@
 
               <div class="row">
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img src="/img/pop-category-01.jpg" class="images" alt="" />
                     <h5>Narx: 1 900 000 so'm</h5>
                     <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -715,7 +694,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/1.webp"
                       class="images"
@@ -738,7 +717,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -761,7 +740,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -784,7 +763,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/4.webp"
                       class="images"
@@ -807,7 +786,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -830,7 +809,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/1.webp"
                       class="images"
@@ -853,7 +832,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -876,7 +855,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img src="/img/pop-category-01.jpg" class="images" alt="" />
                     <h5>Narx: 1 900 000 so'm</h5>
                     <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -895,7 +874,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -918,7 +897,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/1.webp"
                       class="images"
@@ -941,7 +920,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -964,7 +943,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img src="/img/pop-category-01.jpg" class="images" alt="" />
                     <h5>Narx: 1 900 000 so'm</h5>
                     <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -983,7 +962,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/1.webp"
                       class="images"
@@ -1006,7 +985,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -1029,7 +1008,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -1052,7 +1031,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/4.webp"
                       class="images"
@@ -1075,7 +1054,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -1098,7 +1077,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -1121,7 +1100,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -1144,7 +1123,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/4.webp"
                       class="images"
@@ -1167,7 +1146,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/3.webp"
                       class="images"
@@ -1190,7 +1169,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/1.webp"
                       class="images"
@@ -1213,7 +1192,7 @@
                   </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 myCol">
-                  <a class="myCard" href="../product">
+                  <a class="myCard" href="/pages/product">
                     <img
                       src="/img/popular-products/2.webp"
                       class="images"
@@ -1305,7 +1284,7 @@
                   >
                 </li>
                 <li>
-                  <a class="footer__links" href="../cooperation"
+                  <a class="footer__links" href="/pages/cooperation"
                     >Hamkorlik qilish</a
                   >
                 </li>
@@ -1345,91 +1324,17 @@
       </div>
     </footer>
 
-    <!-- <div id="listingTable"></div>
-    <a href="javascript:prevPage()" id="btn_prev">Prev</a>
-    <a href="javascript:nextPage()" id="btn_next">Next</a>
-    page: <span id="page"></span> -->
-
-    <!-- <script>
-      var current_page = 1;
-      var records_per_page = 2;
-
-      var objJson = [
-        { adName: "AdName 1" },
-        { adName: "AdName 2" },
-        { adName: "AdName 3" },
-        { adName: "AdName 4" },
-        { adName: "AdName 5" },
-        { adName: "AdName 6" },
-        { adName: "AdName 7" },
-        { adName: "AdName 8" },
-        { adName: "AdName 9" },
-        { adName: "AdName 10" },
-      ]; // Can be obtained from another source, such as your objJson variable
-
-      function prevPage() {
-        if (current_page > 1) {
-          current_page--;
-          changePage(current_page);
-        }
-      }
-
-      function nextPage() {
-        if (current_page < numPages()) {
-          current_page++;
-          changePage(current_page);
-        }
-      }
-
-      function changePage(page) {
-        var btn_next = document.getElementById("btn_next");
-        var btn_prev = document.getElementById("btn_prev");
-        var listing_table = document.getElementById("listingTable");
-        var page_span = document.getElementById("page");
-
-        // Validate page
-        if (page < 1) page = 1;
-        if (page > numPages()) page = numPages();
-
-        listing_table.innerHTML = "";
-
-        for (
-          var i = (page - 1) * records_per_page;
-          i < page * records_per_page;
-          i++
-        ) {
-          listing_table.innerHTML += objJson[i].adName + "<br>";
-        }
-        page_span.innerHTML = page;
-
-        if (page == 1) {
-          btn_prev.style.visibility = "hidden";
-        } else {
-          btn_prev.style.visibility = "visible";
-        }
-
-        if (page == numPages()) {
-          btn_next.style.visibility = "hidden";
-        } else {
-          btn_next.style.visibility = "visible";
-        }
-      }
-
-      function numPages() {
-        return Math.ceil(objJson.length / records_per_page);
-      }
-
-      window.onload = function () {
-        changePage(1);
-      };
-    </script> -->
+    <a href="+998943698058" class="fixedPhone">
+      <i class="fas fa-phone-alt"></i>
+      <div class="bg"></div>
+    </a>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../../js/popper.min.js"></script>
-    <script src="../../js/bootstrap.js"></script>
-    <script src="../../js/app.js"></script>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/app.js"></script>
     <script>
       const content = document.querySelector(".leftCatalog");
 
