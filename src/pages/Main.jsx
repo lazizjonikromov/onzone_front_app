@@ -1,4 +1,6 @@
 import React from 'react'
+import Brands from '../components/Brands'
+import Footer from '../components/Footer'
 import FridgeProducts from '../components/FridgeProducts'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -12,7 +14,6 @@ import TvProducts from '../components/TvProducts'
 const Main = () => {
     return (
         <>
-            <Navbar />
             <Header />
             <PopularCategory />
 
@@ -33,6 +34,8 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+
+            <Brands />
 
         </>
     )

@@ -19,6 +19,14 @@
         -webkit-mask-image: url("../icon/heart.svg");
     }
 
+    &.icon-fixed-phone {
+        mask-image: url("../icon/phone.png");
+        -webkit-mask-image: url("../icon/phone.png");
+        width: 31px;
+        height: 31px;
+        background: #fff;
+    }
+
     &.icon-cart {
         mask-image: url("../icon/cart.svg");
         -webkit-mask-image: url("../icon/cart.svg");
