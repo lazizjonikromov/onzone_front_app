@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/fontawesome-free-regular'
 import { faHandshake } from '@fortawesome/free-regular-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -397,9 +398,9 @@ const Navbar = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-1 col-md-3 col-4 p-lg-0">
-                                <a href="/" className="logo">
+                                <Link to={'/'} className="logo">
                                     <img src="/image/logo.png" alt="" className="w-100" />
-                                </a>
+                                </Link>
                             </div>
                             <div
                                 className="col-lg-11 col-md-9 col-8 skoring d-flex align-items-center"

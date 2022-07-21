@@ -1,12 +1,11 @@
 import React from 'react'
 import AllProduct from '../components/AllCategory/AllProduct'
-import CatalogTop from '../components/AllCategory/CatalogTop'
-import SidebarAllCategory from '../components/AllCategory/SidebarAllCategory'
 import SidebarAttribute from '../components/AllCategory/SidebarAttribute'
 import SidebarCard from '../components/AllCategory/SidebarCard'
 import SortingProduct from '../components/AllCategory/SortingProduct'
+import CatalogTop from '../components/SubMultiCategory/CatalogTop'
 
-const AllCategory = () => {
+const SubMultiCategory = () => {
   return (
     <>
         <div className="catalog">
@@ -16,7 +15,6 @@ const AllCategory = () => {
                     <div className="row">
                         <div className="col-lg-3 leftCatalog">
                             <div onclick="handleClick()" className="close">x</div>
-                            <SidebarAllCategory />
                             <SidebarAttribute />
                             <SidebarCard />
                         </div>
@@ -33,4 +31,4 @@ const AllCategory = () => {
   )
 }
 
-export default AllCategory
+export default SubMultiCategory

@@ -1,12 +1,12 @@
 import React from 'react'
 import AllProduct from '../components/AllCategory/AllProduct'
-import CatalogTop from '../components/AllCategory/CatalogTop'
-import SidebarAllCategory from '../components/AllCategory/SidebarAllCategory'
 import SidebarAttribute from '../components/AllCategory/SidebarAttribute'
 import SidebarCard from '../components/AllCategory/SidebarCard'
 import SortingProduct from '../components/AllCategory/SortingProduct'
+import CatalogTop from '../components/SubCategory/CatalogTop'
+import SidebarAllCategory from '../components/SubCategory/SidebarAllCategory'
 
-const AllCategory = () => {
+const SubCategory = () => {
   return (
     <>
         <div className="catalog">
@@ -33,4 +33,4 @@ const AllCategory = () => {
   )
 }
 
-export default AllCategory
+export default SubCategory
