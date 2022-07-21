@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const SmartPhoneProducts = () => {
     return (
         <>
-            <div classNameName="smartphone-products">
+            <div className="smartphone-products">
                 <div className="row mt-4 align-items-center justify-content-between">
                     <h2 className="col-8">Smartfonlar</h2>
                     <div className="col-4 d-flex justify-content-end">

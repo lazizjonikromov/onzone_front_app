@@ -1,4 +1,5 @@
 import React from 'react'
+import FridgeProducts from '../components/FridgeProducts'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import NewProducts from '../components/NewProducts'
@@ -6,6 +7,7 @@ import PopularCategory from '../components/PopularCategory'
 import PopularProducts from '../components/PopularProducts'
 import Sidebar from '../components/Sidebar'
 import SmartPhoneProducts from '../components/SmartPhoneProducts'
+import TvProducts from '../components/TvProducts'
 
 const Main = () => {
     return (
@@ -25,6 +27,8 @@ const Main = () => {
                             <PopularProducts />
                             <NewProducts />
                             <SmartPhoneProducts />
+                            <TvProducts />
+                            <FridgeProducts />
                         </div>
                     </div>
                 </div>
