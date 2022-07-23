@@ -20,7 +20,7 @@ const RelationProducts = () => {
                         </div>
 
                         <Swiper
-                            slidesPerView={3.5}
+                            slidesPerView={4.5}
                             loop={true}
                             lazy={true}
                             breakpoints={{

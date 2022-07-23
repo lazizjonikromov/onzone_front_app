@@ -411,8 +411,8 @@ const Navbar = () => {
                                 >
                                     <i className="icon icon-search"></i> Katalog
                                 </div>
-                                <a href="pages/add-card" className="btn mobileContent"
-                                ><FontAwesomeIcon icon={faCreditCard} />Skoringdan o`tish </a>
+                                <Link to={'/add-card'} className="btn mobileContent"
+                                ><FontAwesomeIcon icon={faCreditCard} />Skoringdan o`tish </Link>
                                 <form className="mobileContent">
                                     <i className=""><img src="/image/search.svg" alt="" /></i>
                                     <input
@@ -432,17 +432,17 @@ const Navbar = () => {
                                             <a href="#">Oʻzbekcha</a>
                                         </div>
                                     </div>
-                                    <a href="pages/cart" className="cart">
+                                    <Link to={'/cart'} className="cart">
                                         <i className="icon icon-cart"></i>
-                                        <h5>0</h5>
-                                    </a>
-                                    <a href="pages/wishList" className="heart mobileContent">
+                                        <h5>1</h5>
+                                    </Link>
+                                    <Link to={'/wishlist'} className="heart mobileContent">
                                         <i className="icon icon-heart"></i>
-                                        <h5>0</h5>
-                                    </a>
-                                    <a href="pages/scoring" className="user">
+                                        <h5>2</h5>
+                                    </Link>
+                                    <Link to={'/login'} className="user">
                                         <img src="/image/user.svg" alt="" />
-                                    </a>
+                                    </Link>
 
                                     <div id="mobileMenu" className="mobileMenu">
                                         <div className="line m-0">

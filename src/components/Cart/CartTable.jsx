@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/fontawesome-free-solid'
+import CartModal from './CartModal'
 
 
 const CartTable = () => {
+    const [modal, setModal] = useState(false)
     return (
         <>
             <div className="cartTable">
@@ -23,8 +26,7 @@ const CartTable = () => {
                                 <div className="carts">
                                     <div className="cart-left">
                                         <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
-                                            {/* <FontAwesomeIcon icon={} /> */}
+                                            <FontAwesomeIcon icon={faTrash} />
                                         </button>
 
                                         <div className="lefts">
@@ -37,56 +39,13 @@ const CartTable = () => {
                                                 <button
                                                     type="button"
                                                     className="btn btn-light"
-                                                    data-toggle="modal"
-                                                    data-target="#exampleModal"
+                                                    onClick={() => setModal(true)}
                                                 >
                                                     TEXNO DUNYO
                                                 </button>
+                                                
+                                                <CartModal modal={modal} setModal={setModal} />
 
-                                                <div
-                                                    className="modal fade"
-                                                    id="exampleModal"
-                                                    tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel"
-                                                    aria-hidden="true"
-                                                >
-                                                    <div className="modal-dialog modal-dialog-centered">
-                                                        <div className="modal-content">
-                                                            <div className="modal-header">
-                                                                <h5 className="modal-title" id="exampleModalLabel">
-                                                                    TEXNO DUNYO
-                                                                </h5>
-                                                                <button
-                                                                    type="button"
-                                                                    className="close"
-                                                                    data-dismiss="modal"
-                                                                    aria-label="Close"
-                                                                >
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div className="modal-body">
-                                                                <div className="company-data">
-                                                                    <div className="address">
-                                                                        <i className="fas fa-map-marker-alt"></i>
-                                                                        <p>
-                                                                            Toshkent shahri telegramda kuzatib boring!
-                                                                            @texno_dunyo
-                                                                        </p>
-                                                                    </div>
-                                                                    <a href="tel:+998946408356" className="phone">
-                                                                        <i className="fas fa-phone-alt"></i>
-                                                                        <p>+998 94 640 83 56</p>
-                                                                    </a>
-                                                                    <div className="time">
-                                                                        <i className="fas fa-clock"></i>
-                                                                        <p>8:00 - 22:00</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
 
@@ -100,203 +59,7 @@ const CartTable = () => {
 
                                     <div className="cart-right">
                                         <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
-                                        </button>
-
-                                        <div className="quantity">
-                                            <div className="quantity-input">
-                                                <div className="btn btn-increase"></div>
-                                                <input
-                                                    type="text"
-                                                    name="product-quantity"
-                                                    value="1"
-                                                    data-max="120"
-                                                    pattern="[0-9]*"
-                                                    min="1"
-                                                />
-                                                <div className="btn btn-decrease"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carts">
-                                    <div className="cart-left">
-                                        <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
-                                        </button>
-
-                                        <div className="lefts">
-                                            <div className="img">
-                                                <img src="/image/phone.webp" alt="" className="w-100" />
-                                            </div>
-
-                                            <div className="cart-product-name">
-                                                <h3>Смартфон Samsung Galaxy A12 32GB Black</h3>
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-light"
-                                                    data-toggle="modal"
-                                                    data-target="#exampleModal"
-                                                >
-                                                    TEXNO DUNYO
-                                                </button>
-
-                                                <div
-                                                    className="modal fade"
-                                                    id="exampleModal"
-                                                    tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel"
-                                                    aria-hidden="true"
-                                                >
-                                                    <div className="modal-dialog modal-dialog-centered">
-                                                        <div className="modal-content">
-                                                            <div className="modal-header">
-                                                                <h5 className="modal-title" id="exampleModalLabel">
-                                                                    TEXNO DUNYO
-                                                                </h5>
-                                                                <button
-                                                                    type="button"
-                                                                    className="close"
-                                                                    data-dismiss="modal"
-                                                                    aria-label="Close"
-                                                                >
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div className="modal-body">
-                                                                <div className="company-data">
-                                                                    <div className="address">
-                                                                        <i className="fas fa-map-marker-alt"></i>
-                                                                        <p>
-                                                                            Toshkent shahri telegramda kuzatib boring!
-                                                                            @texno_dunyo
-                                                                        </p>
-                                                                    </div>
-                                                                    <a href="tel:+998946408356" className="phone">
-                                                                        <i className="fas fa-phone-alt"></i>
-                                                                        <p>+998 94 640 83 56</p>
-                                                                    </a>
-                                                                    <div className="time">
-                                                                        <i className="fas fa-clock"></i>
-                                                                        <p>8:00 - 22:00</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="cart-product-price">
-                                            <h4>2 100 000 so'm</h4>
-                                            <button className="btn btn-danger">
-                                                Yetkazib berish <span>50 000 so'm</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div className="cart-right">
-                                        <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
-                                        </button>
-
-                                        <div className="quantity">
-                                            <div className="quantity-input">
-                                                <div className="btn btn-increase"></div>
-                                                <input
-                                                    type="text"
-                                                    name="product-quantity"
-                                                    value="1"
-                                                    data-max="120"
-                                                    pattern="[0-9]*"
-                                                    min="1"
-                                                />
-                                                <div className="btn btn-decrease"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carts">
-                                    <div className="cart-left">
-                                        <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
-                                        </button>
-
-                                        <div className="lefts">
-                                            <div className="img">
-                                                <img src="/image/phone.webp" alt="" className="w-100" />
-                                            </div>
-
-                                            <div className="cart-product-name">
-                                                <h3>Смартфон Samsung Galaxy A12 32GB Black</h3>
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-light"
-                                                    data-toggle="modal"
-                                                    data-target="#exampleModal"
-                                                >
-                                                    TEXNO DUNYO
-                                                </button>
-
-                                                <div
-                                                    className="modal fade"
-                                                    id="exampleModal"
-                                                    tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel"
-                                                    aria-hidden="true"
-                                                >
-                                                    <div className="modal-dialog modal-dialog-centered">
-                                                        <div className="modal-content">
-                                                            <div className="modal-header">
-                                                                <h5 className="modal-title" id="exampleModalLabel">
-                                                                    TEXNO DUNYO
-                                                                </h5>
-                                                                <button
-                                                                    type="button"
-                                                                    className="close"
-                                                                    data-dismiss="modal"
-                                                                    aria-label="Close"
-                                                                >
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div className="modal-body">
-                                                                <div className="company-data">
-                                                                    <div className="address">
-                                                                        <i className="fas fa-map-marker-alt"></i>
-                                                                        <p>
-                                                                            Toshkent shahri telegramda kuzatib boring!
-                                                                            @texno_dunyo
-                                                                        </p>
-                                                                    </div>
-                                                                    <a href="tel:+998946408356" className="phone">
-                                                                        <i className="fas fa-phone-alt"></i>
-                                                                        <p>+998 94 640 83 56</p>
-                                                                    </a>
-                                                                    <div className="time">
-                                                                        <i className="fas fa-clock"></i>
-                                                                        <p>8:00 - 22:00</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="cart-product-price">
-                                            <h4>2 100 000 so'm</h4>
-                                            <button className="btn btn-danger">
-                                                Yetkazib berish <span>50 000 so'm</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div className="cart-right">
-                                        <button className="btn btn-outline-danger delete-cart">
-                                            <i className="fas fa-trash"></i>
+                                            <FontAwesomeIcon icon={faTrash} />
                                         </button>
 
                                         <div className="quantity">

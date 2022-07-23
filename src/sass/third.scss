@@ -589,13 +589,14 @@ $red: #00C65E;
 }
 
 .scoring {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: repeat;
-    background-image: url(../icon/bgImage.svg);
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: top;
+    // background-repeat: repeat;
+    // background-image: url(../icon/bgImage.svg);
     padding-top: 60px;
     padding-bottom: 130px;
+    background-color: #fff;
 
     .cards {
         border-radius: 16px;
