@@ -406,7 +406,6 @@ const Navbar = () => {
                                 className="col-lg-11 col-md-9 col-8 skoring d-flex align-items-center"
                             >
                                 <div
-                                    onclick="menyu()"
                                     id="catalogId"
                                     className="catalog div mobileContent"
                                 >
@@ -445,7 +444,7 @@ const Navbar = () => {
                                         <img src="/image/user.svg" alt="" />
                                     </a>
 
-                                    <div onclick="menyu()" id="mobileMenu" className="mobileMenu">
+                                    <div id="mobileMenu" className="mobileMenu">
                                         <div className="line m-0">
                                             <div></div>
                                             <div></div>

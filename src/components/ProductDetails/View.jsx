@@ -3,7 +3,6 @@ import React from 'react'
 const View = () => {
     return (
         <>
-
             <section className="view">
                 <div className="container">
                     <div className="row">
