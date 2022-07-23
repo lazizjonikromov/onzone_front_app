@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Brands from '../components/Brands'
 import FridgeProducts from '../components/FridgeProducts'
 import Header from '../components/Header'

@@ -4,6 +4,7 @@ import FixedPhone from "./components/FixedPhone";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AllCategory from "./pages/AllCategory";
+import Cart from "./pages/Cart";
 import Main from "./pages/Main";
 import ProductDetails from "./pages/ProductDetails";
 import SubCategory from "./pages/SubCategory";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/sub-category" element={<SubCategory />} />
           <Route path="/sub-multi-category" element={<SubMultiCategory />} />
           <Route path="/product" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
 
         <Footer />

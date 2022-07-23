@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef, useState } from "react";
+
 
 const View = () => {
     return (
@@ -26,16 +27,16 @@ const View = () => {
                                             <div className="swiper productSwiper">
                                                 <div className="swiper-wrapper d-flex flex-column">
                                                     <div className="swiper-slide">
-                                                        <img src="../image/viewProduct/1.png" />
+                                                        <img src="/image/viewProduct/1.png" />
                                                     </div>
                                                     <div className="swiper-slide">
-                                                        <img src="../image/viewProduct/2.webp" />
+                                                        <img src="/image/viewProduct/2.webp" />
                                                     </div>
                                                     <div className="swiper-slide">
-                                                        <img src="../image/viewProduct/3.png" />
+                                                        <img src="/image/viewProduct/3.png" />
                                                     </div>
                                                     <div className="swiper-slide">
-                                                        <img src="../image/viewProduct/4.png" />
+                                                        <img src="/image/viewProduct/4.png" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -49,38 +50,38 @@ const View = () => {
                                                 <div className="swiper-wrapper">
                                                     <div className="swiper-slide">
                                                         <a
-                                                            href="../image/viewProduct/1.png"
+                                                            href="/image/viewProduct/1.png"
                                                             data-fancybox="gallery"
                                                             data-caption="Optional caption"
                                                         >
-                                                            <img src="../image/viewProduct/1.png" />
+                                                            <img src="/image/viewProduct/1.png" />
                                                         </a>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <a
-                                                            href="../image/viewProduct/2.webp"
+                                                            href="/image/viewProduct/2.webp"
                                                             data-fancybox="gallery"
                                                             data-caption="Optional caption"
                                                         >
-                                                            <img src="../image/viewProduct/2.webp" />
+                                                            <img src="/image/viewProduct/2.webp" />
                                                         </a>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <a
-                                                            href="../image/viewProduct/3.png"
+                                                            href="/image/viewProduct/3.png"
                                                             data-fancybox="gallery"
                                                             data-caption="Optional caption"
                                                         >
-                                                            <img src="../image/viewProduct/3.png" />
+                                                            <img src="/image/viewProduct/3.png" />
                                                         </a>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <a
-                                                            href="../image/viewProduct/4.png"
+                                                            href="/image/viewProduct/4.png"
                                                             data-fancybox="gallery"
                                                             data-caption="Optional caption"
                                                         >
-                                                            <img src="../image/viewProduct/4.png" />
+                                                            <img src="/image/viewProduct/4.png" />
                                                         </a>
                                                     </div>
                                                 </div>
