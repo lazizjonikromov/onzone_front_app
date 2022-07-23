@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -32,24 +33,20 @@ const Footer = () => {
                                 <h6 className="footer__title">Mijozlar uchun</h6>
                                 <ul>
                                     <li>
-                                        <a className="footer__links" href="pages/oferta"
-                                        >Mijozlar uchun oferta</a
-                                        >
+                                        <Link to={'/oferta'} className="footer__links"
+                                        >Mijozlar uchun oferta</Link>
                                     </li>
                                     <li>
                                         <a className="footer__links" href="faq/how-to-sell"
-                                        >Xarid va to`lov</a
-                                        >
+                                        >Xarid va to`lov</a>
                                     </li>
                                     <li>
                                         <a className="footer__links" href="faq/seller"
-                                        >Mahsulotni qaytarish va almashtirish</a
-                                        >
+                                        >Mahsulotni qaytarish va almashtirish</a>
                                     </li>
                                     <li>
                                         <a className="footer__links" href="faq/return-and-exchange"
-                                        >Yetkazib berish</a
-                                        >
+                                        >Yetkazib berish</a>
                                     </li>
                                     <li><a className="footer__links" href="faq/credit">Kredit</a></li>
                                 </ul>
@@ -63,9 +60,8 @@ const Footer = () => {
                                         <a className="footer__links" href="faq/seller">Sotuvchilarga</a>
                                     </li>
                                     <li>
-                                        <a className="footer__links" href="pages/cooperation"
-                                        >Hamkorlik qilish</a
-                                        >
+                                        <Link className="footer__links" to={'/cooperation'}
+                                        >Hamkorlik qilish</Link>
                                     </li>
                                 </ul> 
                             </div>

@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../components/UserDashboard/Header'
-import Sidebar from '../components/UserDashboard/Sidebar'
+import Header from '../../components/UserDashboard/Header'
+import MyCards from '../../components/UserDashboard/MyCards'
+import Sidebar from '../../components/UserDashboard/Sidebar'
 
-const UserDashboard = () => {
+const MyCard = () => {
     return (
         <>
-            <div className="shaxsiy-kabinet">
+            <div className="shaxsiy-kabinet my-cards">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -24,6 +25,7 @@ const UserDashboard = () => {
 
                         <div className="col-lg-9">
                             <Header />
+                            <MyCards />
                         </div>
                     </div>
                 </div>
@@ -32,4 +34,4 @@ const UserDashboard = () => {
     )
 }
 
-export default UserDashboard
+export default MyCard
