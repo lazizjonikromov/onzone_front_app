@@ -131,7 +131,7 @@ const Cooperation = () => {
                                             </div>
                                         </div>
                                     </div>
-
+                                    
                                     <div className="col-lg-6 mb-4">
                                         <div className="inputWrap">
                                             <label for="phone2">Telefon</label>
