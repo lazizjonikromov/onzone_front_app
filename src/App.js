@@ -10,7 +10,11 @@ import Login from "./pages/Login";
 import Main from "./pages/Main";
 import Oferta from "./pages/Oferta";
 import ProductDetails from "./pages/ProductDetails";
+import Credit from "./pages/Questions/Credit";
+import Delivery from "./pages/Questions/Delivery";
+import Exchange from "./pages/Questions/Exchange";
 import Payment from "./pages/Questions/Payment";
+import Sellers from "./pages/Questions/Sellers";
 import Register from "./pages/Register";
 import Scoring from "./pages/Scoring";
 import SubCategory from "./pages/SubCategory";
@@ -43,6 +47,10 @@ function App() {
           <Route path="/cooperation" element={<Cooperation />} />
           <Route path="/oferta" element={<Oferta />} />
           <Route path="/question/payment" element={<Payment />} />
+          <Route path="/question/sellers" element={<Sellers />} />
+          <Route path="/question/exchange" element={<Exchange />} />
+          <Route path="/question/delivery" element={<Delivery />} />
+          <Route path="/question/credit" element={<Credit />} />
         </Routes>
 
         <Footer />
