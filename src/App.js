@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Main from "./pages/Main";
 import Oferta from "./pages/Oferta";
 import ProductDetails from "./pages/ProductDetails";
+import Payment from "./pages/Questions/Payment";
 import Register from "./pages/Register";
 import Scoring from "./pages/Scoring";
 import SubCategory from "./pages/SubCategory";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/personal" element={<Personal />} />
           <Route path="/cooperation" element={<Cooperation />} />
           <Route path="/oferta" element={<Oferta />} />
+          <Route path="/question/payment" element={<Payment />} />
         </Routes>
 
         <Footer />

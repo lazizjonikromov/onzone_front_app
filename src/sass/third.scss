@@ -424,12 +424,12 @@ $red: #00C65E;
     }
 }
 
-.letterBg {
-    background-image: url(../icon/chakana-letter.svg);
-    background-repeat: no-repeat;
-    background-position: top 60px right;
-    background-size: 105px;
-}
+// .letterBg {
+//     background-image: url(../icon/chakana-letter.svg);
+//     background-repeat: no-repeat;
+//     background-position: top 60px right;
+//     background-size: 105px;
+// }
 
 .howToSell {
     background-color: #FCFFFF;
@@ -465,8 +465,15 @@ $red: #00C65E;
                 padding: 0;
                 border: 0;
 
+                .accordion-button{
+                    background-color: transparent;
+                    padding: 0;
+                    border: 0;
+                    width: 100%;
+                }
+
                 h5 {
-                    font-size: 24px;
+                    font-size: 23px;
                     cursor: pointer;
                     color: #282830;
                     font-weight: 600;
@@ -476,8 +483,8 @@ $red: #00C65E;
                     align-items: center;
                     justify-content: space-between;
 
-                    i {
-                        font-size: 20px;
+                    .fa-angle-down {
+                        font-size: 19px;
                         color: #282828;
 
                         @media(max-width: 992px) {
@@ -567,7 +574,7 @@ $red: #00C65E;
                 border-radius: 0 0 16px 16px;
             }
 
-            i {
+            .fa-angle-right {
                 color: #8f8f8f;
                 font-size: 14px;
             }
@@ -576,7 +583,7 @@ $red: #00C65E;
             &:hover {
                 color: $red;
 
-                i {
+                .fa-angle-right {
                     color: $red;
                 }
             }
