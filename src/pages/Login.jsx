@@ -13,7 +13,7 @@ const Login = () => {
                                 <form action="POST">
                                     <div className="numberWrap">
                                         <label htmlFor="phone">Sizning telefon raqamingiz *</label>
-                                        <label className="label" for="phone2">+998</label>
+                                        <label className="label" htmlFor="phone2">+998</label>
                                         <input
                                             required
                                             type="text"

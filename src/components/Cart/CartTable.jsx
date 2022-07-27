@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/fontawesome-free-solid'
-import CartModal from './CartModal'
+import { faMapMarkerAlt, faPhone, faClock } from '@fortawesome/fontawesome-free-solid'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+const CartTable = (args) => {
+    const [modal, setModal] = useState(false);
 
-const CartTable = () => {
-    const [modal, setModal] = useState(false)
+    const toggle = () => setModal(!modal);
+
     return (
         <>
             <div className="cartTable">
@@ -39,13 +42,47 @@ const CartTable = () => {
                                                 <button
                                                     type="button"
                                                     className="btn btn-light"
-                                                    onClick={() => setModal(true)}
+                                                    onClick={toggle}
                                                 >
                                                     TEXNO DUNYO
                                                 </button>
-                                                
-                                                <CartModal modal={modal} setModal={setModal} />
 
+                                                <Modal isOpen={modal} toggle={toggle} {...args} aria-labelledby="contained-modal-title-vcenter" centered>
+                                                    <div className="modal-header">
+                                                        <h5 className="modal-title" id="exampleModalLabel">
+                                                            TEXNO DUNYO
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            className="close"
+                                                            onClick={toggle}
+                                                        >
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div className="modal-body">
+                                                        <div className="company-data">
+                                                            <div className="address">
+                                                                {/* <i className="fas fa-map-marker-alt"></i> */}
+                                                                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                                                <p>
+                                                                    Toshkent shahri telegramda kuzatib boring!
+                                                                    @texno_dunyo
+                                                                </p>
+                                                            </div>
+                                                            <a href="tel:+998946408356" className="phone">
+                                                                {/* <i className="fas fa-phone-alt"></i> */}
+                                                                <FontAwesomeIcon icon={faPhone} />
+                                                                <p>+998 94 640 83 56</p>
+                                                            </a>
+                                                            <div className="time">
+                                                                {/* <i className="fas fa-clock"></i> */}
+                                                                <FontAwesomeIcon icon={faClock} />
+                                                                <p>8:00 - 22:00</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </Modal>
                                             </div>
                                         </div>
 

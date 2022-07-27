@@ -54,6 +54,27 @@ body {
         display: flex;
         align-items: center;
         margin-top: 30px;
+        padding-bottom: 12px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(192, 192, 192, 0.411);
+            border-radius: 1px;
+        }
+
+        @media (max-width:767px) {
+            overflow: auto;
+            flex-wrap: nowrap;
+        }
+
 
         a {
             font-size: 16px;
@@ -63,6 +84,10 @@ body {
             margin-right: 15px;
             display: flex;
             align-items: center;
+
+            @media (max-width:767px) {
+                flex-shrink: 0;
+            }
 
             span {
                 color: #c5c9d2;
@@ -755,11 +780,15 @@ body {
             }
 
             .row {
-
-                @media(max-width: 992px) {
-                    overflow-x: auto;
-                    width: 100%;
+                @media (max-width:767px) {
+                    overflow: auto;
+                    flex-wrap: nowrap;
                 }
+
+                // @media(max-width: 992px) {
+                //     overflow-x: auto;
+                //     width: 100%;
+                // }
             }
 
             .fa-handshake {
@@ -774,6 +803,10 @@ body {
 
                 &:hover {
                     color: $red;
+                }
+
+                @media (max-width:767px) {
+                    flex-shrink: 0;
                 }
 
                 @media(max-width: 767px) {
@@ -2508,92 +2541,8 @@ body {
                                 }
                             }
 
-                            .modal {
-                                .modal-content {
-                                    border-radius: 16px;
+                            
 
-                                    .modal-header {
-                                        .close {
-                                            color: #00C65E;
-                                            font-weight: 500;
-                                            font-size: 30px;
-
-                                            &:focus {
-                                                outline: none;
-                                            }
-                                        }
-                                    }
-
-                                    .modal-body {
-                                        .company-data {
-                                            box-shadow: 0 3px 16px #878a9580;
-                                            padding: 14px 16px;
-                                            margin-bottom: 20px;
-                                            border-radius: 16px;
-
-                                            .address {
-                                                display: flex;
-                                                align-items: center;
-                                                padding: 15px 0;
-                                                border-bottom: 1px solid rgba(40, 40, 48, .1);
-                                                padding-top: 0;
-
-                                                p {
-                                                    font-size: 15px;
-                                                    font-weight: 600;
-                                                    color: #282830;
-                                                }
-
-                                                .fa-map-marker-alt {
-                                                    font-size: 23px;
-                                                    margin-right: 15px;
-                                                    color: #00C65E;
-                                                }
-                                            }
-
-                                            .phone {
-                                                display: flex;
-                                                align-items: center;
-                                                padding: 15px 0;
-                                                border-bottom: 1px solid rgba(40, 40, 48, .1);
-
-                                                p {
-                                                    font-size: 15px;
-                                                    font-weight: 600;
-                                                    color: #4285f4;
-                                                }
-
-                                                .fa-phone {
-                                                    font-size: 23px;
-                                                    margin-right: 15px;
-                                                    color: #00C65E;
-                                                }
-                                            }
-
-                                            .time {
-                                                display: flex;
-                                                align-items: center;
-                                                padding: 15px 0;
-                                                border-bottom: 1px solid rgba(40, 40, 48, .1);
-
-                                                p {
-                                                    font-size: 15px;
-                                                    font-weight: 600;
-                                                    color: #282830;
-                                                }
-
-                                                .fa-clock {
-                                                    font-size: 23px;
-                                                    margin-right: 15px;
-                                                    color: #00C65E;
-                                                }
-                                            }
-
-                                        }
-                                    }
-                                }
-
-                            }
 
                             @media(max-width: 1440px) {
                                 margin-right: 20px;
@@ -2875,6 +2824,7 @@ body {
             color: #282830;
             font-size: 34px;
             margin-bottom: 30px;
+
         }
 
         .infoWrap {
@@ -2944,6 +2894,11 @@ body {
             font-weight: 600;
             color: #282830;
             font-size: 38px;
+
+            @media (max-width:992px) {
+                font-size: 25px;
+                margin-top: 25px;
+            }
         }
 
 
@@ -2951,6 +2906,10 @@ body {
             border-radius: 16px;
             margin-bottom: 50px;
             margin-top: 60px;
+
+            @media (max-width:992px) {
+                margin-top: 35px;
+            }
 
             a {
                 padding: 15px 15px 19px;
@@ -3401,45 +3360,131 @@ body {
     }
 }
 
-.modal-dialog {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00000073;
-    width: 100%;
-    height: 100%;
-    height: 100vh;
-    z-index: 111111;
-    max-width: 100%;
-    margin: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease-in-out;
-
+.modal {
     .modal-content {
-        width: 500px;
-        margin: auto;
-        transform: translateY(-50px);
-        transition: all .5s ease-in-out;
-        z-index: 1;
-    }
+        border-radius: 16px;
 
-    .back {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+        .modal-header {
+            .close {
+                color: #00C65E;
+                font-weight: 500;
+                font-size: 30px;
 
-    &.active {
-        opacity: 1;
-        visibility: visible;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
 
-        .modal-content {
-            transform: translate(0);
+        .modal-body {
+            .company-data {
+                box-shadow: 0 3px 16px #878a9580;
+                padding: 14px 16px;
+                margin-bottom: 20px;
+                border-radius: 16px;
+
+                .address {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    border-bottom: 1px solid rgba(40, 40, 48, .1);
+                    padding-top: 0;
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #282830;
+                    }
+
+                    .fa-map-marker-alt {
+                        font-size: 23px;
+                        margin-right: 15px;
+                        color: #00C65E;
+                    }
+                }
+
+                .phone {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    border-bottom: 1px solid rgba(40, 40, 48, .1);
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #4285f4;
+                    }
+
+                    .fa-phone {
+                        font-size: 23px;
+                        margin-right: 15px;
+                        color: #00C65E;
+                    }
+                }
+
+                .time {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    border-bottom: 1px solid rgba(40, 40, 48, .1);
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #282830;
+                    }
+
+                    .fa-clock {
+                        font-size: 23px;
+                        margin-right: 15px;
+                        color: #00C65E;
+                    }
+                }
+
+            }
         }
     }
 }
+
+// .modal-dialog {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: #00000073;
+//     width: 100%;
+//     height: 100%;
+//     height: 100vh;
+//     z-index: 111111;
+//     max-width: 100%;
+//     margin: 0;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: all .5s ease-in-out;
+
+//     .modal-content {
+//         width: 500px;
+//         margin: auto;
+//         transform: translateY(-50px);
+//         transition: all .5s ease-in-out;
+//         z-index: 1;
+//     }
+
+//     .back {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//     }
+
+//     &.active {
+//         opacity: 1;
+//         visibility: visible;
+
+//         .modal-content {
+//             transform: translate(0);
+//         }
+//     }
+// }
