@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import FixedPhone from "./components/FixedPhone";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import AllCategory from "./pages/AllCategory";
 import Cart from "./pages/Cart";
 import Cooperation from "./pages/Cooperation";
@@ -31,6 +32,7 @@ function App() {
     <>
       <Router>
         <Navbar />
+        <ScrollToTop />
         
         <Routes>
           <Route path="/" element={<Main />} />
