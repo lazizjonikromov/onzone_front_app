@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../../components/UserDashboard/Header'
 import PersonalInfo from '../../components/UserDashboard/PersonalInfo'
 import Sidebar from '../../components/UserDashboard/Sidebar'
@@ -11,10 +12,10 @@ const Personal = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="slash">
-                                <a className="m-0" href="/">Bosh sahifa</a>
-                                <a className="m-0" href="/pages/scoring"
+                                <Link className="m-0" to={'/'}>Bosh sahifa</Link>
+                                <Link className="m-0" to={'/user-dashboard'}
                                 ><span>/</span> Shaxsiy kabinet
-                                </a>
+                                </Link>
                                 <a href="#!"><span>/</span> Shaxsiy ma'lumotlar - marketpleys ONZONE </a>
                             </div>
                         </div>
