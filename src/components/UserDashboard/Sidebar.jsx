@@ -17,7 +17,7 @@ const Sidebar = () => {
                         ><b className="icon icon-profile-2"></b> Mening kartalarim </span
                         ><FontAwesomeIcon icon={faAngleRight}  /> </Link>
 
-                    <Link className="" to={'#'}>
+                    <Link className="" to={'/credits'}>
                         <span><b className="icon icon-profile-3"></b> Kreditlar</span
                         ><FontAwesomeIcon icon={faAngleRight}  /> </Link>
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
                         ><b className="icon icon-profile-4"></b> Shaxsiy ma'lumotlar</span
                         ><FontAwesomeIcon icon={faAngleRight}  /> </Link>
 
-                    <Link className="" to={'#'}>
+                    <Link className="" to={'/change-password'}>
                         <span
                         ><b className="icon icon-profile-5"></b> Parolni almashtirish </span
                         ><FontAwesomeIcon icon={faAngleRight}  /> </Link>

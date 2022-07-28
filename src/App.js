@@ -19,6 +19,8 @@ import Register from "./pages/Register";
 import Scoring from "./pages/Scoring";
 import SubCategory from "./pages/SubCategory";
 import SubMultiCategory from "./pages/SubMultiCategory";
+import ChangePassword from "./pages/User/ChangePassword";
+import Credits from "./pages/User/Credits";
 import Dashboard from "./pages/User/Dashboard";
 import MyCard from "./pages/User/MyCard";
 import Personal from "./pages/User/Personal";
@@ -44,6 +46,8 @@ function App() {
           <Route path="/user-dashboard" element={<Dashboard />} />
           <Route path="/my-cards" element={<MyCard />} />
           <Route path="/personal" element={<Personal />} />
+          <Route path="/credits" element={<Credits />} />
+          <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/cooperation" element={<Cooperation />} />
           <Route path="/oferta" element={<Oferta />} />
           <Route path="/question/payment" element={<Payment />} />
