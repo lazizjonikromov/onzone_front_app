@@ -8,6 +8,7 @@ const Header = (args) => {
     const [modal_dashboard, setModal] = useState(false);
 
     const toggle = () => setModal(!modal_dashboard);
+
     return (
         <>
             <div className="infoWrap">
@@ -26,15 +27,16 @@ const Header = (args) => {
             </div>
 
             <Modal isOpen={modal_dashboard} toggle={toggle} {...args} aria-labelledby="contained-modal-title-vcenter" centered className={`logoutModal ${modal_dashboard ? 'active' : ''}`} id="logoutModal">
-                    <div className="cards">
-                        <div className="circle"><i className="fas fa-exclamation"></i><FontAwesomeIcon icon={faExclamation} /></div>
-                        <h2>Akkauntdan chiqmoqchimisiz?</h2>
-                        <div className="d-flex align-items-center justify-content-center">
-                            <button className="btn yes">Ha</button>
-                            <button onClick={toggle} className="btn no">Yo'q</button>
-                        </div>
+                <div className="cards">
+                    <div className="circle"><i className="fas fa-exclamation"></i><FontAwesomeIcon icon={faExclamation} /></div>
+                    <h2>Akkauntdan chiqmoqchimisiz?</h2>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <button className="btn yes">Ha</button>
+                        <button onClick={toggle} className="btn no">Yo'q</button>
                     </div>
+                </div>
             </Modal>
+
         </>
     )
 }

@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/fontawesome-free-regular'
 import { faHandshake } from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const Navbar = () => {
+const Navbar = (args) => {
+    const [modal_catalog, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal_catalog);
     return (
         <>
             <div className="Navbar">
                 {/* Navigation */}
 
                 <div id="nav" className="nav-01">
-                    <div className="fixedCatalog">
+                    <Modal isOpen={modal_catalog} toggle={toggle} {...args} className={`fixedCatalog ${modal_catalog ? 'active' : ''}`} style={{maxWidth: '1800px', width: '100%'}}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-4 myCol">
@@ -394,7 +398,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Modal>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-1 col-md-3 col-4 p-lg-0">
@@ -408,9 +412,11 @@ const Navbar = () => {
                                 <div
                                     id="catalogId"
                                     className="catalog div mobileContent"
+                                    onClick={toggle}
                                 >
                                     <i className="icon icon-search"></i> Katalog
                                 </div>
+
                                 <Link to={'/add-card'} className="btn mobileContent"
                                 ><FontAwesomeIcon icon={faCreditCard} />Skoringdan o`tish </Link>
                                 <form className="mobileContent">
@@ -486,7 +492,7 @@ const Navbar = () => {
                                 >Kir yuvish mashinalari</Link>
 
                                 <Link to={'/sub-multi-category'} className="btn">Muzlatkichlar</Link>
-                                
+
                                 <Link to={'/oferta'}
                                     className="btn btn-light d-flex align-items-center"
                                 >
