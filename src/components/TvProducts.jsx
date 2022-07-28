@@ -6,6 +6,7 @@ import { Navigation } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 const TvProducts = () => {
     return (
@@ -46,7 +47,7 @@ const TvProducts = () => {
                     style={{ height: 'inherit' }}>
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img src="/image/tv/4.webp" className="swiper-lazy" alt="" />
                                 <h5>Narx: 1 900 000 so'm</h5>
                                 <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -62,11 +63,11 @@ const TvProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img src="/image/tv/5.webp" className="swiper-lazy" alt="" />
                                 <h5>Narx: 1 900 000 so'm</h5>
                                 <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -82,11 +83,11 @@ const TvProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img src="image/tv/1.webp" className="swiper-lazy" alt="" />
                                 <h5>Narx: 1 750 000 so'm</h5>
                                 <h4>93 430 <span>so‘mdan oyiga </span></h4>
@@ -102,11 +103,11 @@ const TvProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img src="image/tv/2.webp" className="swiper-lazy" alt="" />
                                 <h5>Narx: 21 200 000 so'm</h5>
                                 <h4>1 131 780 <span> so‘mdan oyiga </span></h4>
@@ -122,11 +123,11 @@ const TvProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img src="image/tv/3.webp" className="swiper-lazy" alt="" />
                                 <h5>Narx: 1 900 000 so'm</h5>
                                 <h4>101 440 <span>so‘mdan oyiga </span></h4>
@@ -142,7 +143,7 @@ const TvProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
                     </div>
                 </Swiper>

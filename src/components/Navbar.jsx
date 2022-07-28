@@ -475,21 +475,23 @@ const Navbar = () => {
                                 {/* <a className="btn katalog">
                                 <i className="fas fa-th-list"></i>Katalog
                             </a> */}
-                                <a href="pages/catalog/phone" className="btn">Smartfonlar</a>
-                                <a href="pages/catalog/phone" className="btn"
-                                >O‘rnatiluvchi texnika</a
-                                >
-                                <a href="pages/catalog/phone" className="btn">Televizorlar</a>
-                                <a href="pages/catalog/phone" className="btn"
-                                >Kir yuvish mashinalari</a
-                                >
-                                <a href="pages/catalog/phone" className="btn">Muzlatkichlar</a>
-                                <a
-                                    href="pages/cooperation"
+                                <Link to={'/sub-multi-category'} className="btn">Smartfonlar</Link>
+
+                                <Link to={'/sub-multi-category'} className="btn"
+                                >O‘rnatiluvchi texnika</Link>
+
+                                <Link to={'/sub-multi-category'} className="btn">Televizorlar</Link>
+
+                                <Link to={'/sub-multi-category'} className="btn"
+                                >Kir yuvish mashinalari</Link>
+
+                                <Link to={'/sub-multi-category'} className="btn">Muzlatkichlar</Link>
+                                
+                                <Link to={'/oferta'}
                                     className="btn btn-light d-flex align-items-center"
                                 >
                                     Hamkorlik Qilish <FontAwesomeIcon icon={faHandshake} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

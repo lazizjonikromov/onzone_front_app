@@ -32,7 +32,7 @@ const Login = () => {
 
                                     <a className="a" href="#">Parolni unutdingzmi?</a>
 
-                                    <Link to={'/login'} className="main btn">Kirish</Link>
+                                    <Link to={'/user-dashboard'} className="main btn">Kirish</Link>
                                     <Link to={'/register'} className="btn"> Ro'yxatdan o'tish </Link>
                                 </form>
                             </div>

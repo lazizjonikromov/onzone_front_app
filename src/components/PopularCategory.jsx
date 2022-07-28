@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const PopularCategory = () => {
     return (
@@ -13,7 +14,7 @@ const PopularCategory = () => {
 
                     <div className="row">
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -22,11 +23,11 @@ const PopularCategory = () => {
                                         <p>Telefonlar va gadjetlar</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -35,11 +36,11 @@ const PopularCategory = () => {
                                         <p>Yirik maishiy texnika</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -48,11 +49,11 @@ const PopularCategory = () => {
                                         <p>Kichik maishiy texnika</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -61,11 +62,11 @@ const PopularCategory = () => {
                                         <p>Klimat uskunalari</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -74,11 +75,11 @@ const PopularCategory = () => {
                                         <p>Tikuv mashinalari</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -87,11 +88,11 @@ const PopularCategory = () => {
                                         <p>Televizorlar</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -100,11 +101,11 @@ const PopularCategory = () => {
                                         <p>O‘rnatiluvchi texnika</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -113,11 +114,11 @@ const PopularCategory = () => {
                                         <p>Oshxona texnikasi</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -126,11 +127,11 @@ const PopularCategory = () => {
                                         <p>Go‘zallik va salomatlik</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -139,11 +140,11 @@ const PopularCategory = () => {
                                         <p>Sportga oid mahsulotlar</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -152,11 +153,11 @@ const PopularCategory = () => {
                                         <p>Printerlar va skanerlar</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                            <a href="pages/catalog/phone">
+                            <Link to={'/sub-multi-category'}>
                                 <div className="card h-100 text-center">
                                     <div className="card-body">
                                         <div className="cardImg">
@@ -165,7 +166,7 @@ const PopularCategory = () => {
                                         <p>Uy va ishxona jixozlari</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

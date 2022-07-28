@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CartWishlist = () => {
     return (
@@ -21,7 +22,7 @@ const CartWishlist = () => {
                         <div className="col-lg-10 mx-auto">
                             <div className="row wishlist-card">
                                 <div className="col-lg-3 col-md-4 col-12 myCol">
-                                    <a className="myCard" href="./product">
+                                    <Link className="myCard" to={'/product'}>
                                         <img src="/image/pop-category-01.jpg" className="images" alt="" />
                                         <h5>Narx: 1 900 000 so'm</h5>
                                         <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -37,10 +38,10 @@ const CartWishlist = () => {
                                                 <i className="icon icon-heart scales"></i>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="col-lg-3 col-md-4 col-12 myCol">
-                                    <a className="myCard" href="./product">
+                                    <Link className="myCard" to={'/product'}>
                                         <img src="/image/pop-category-01.jpg" className="images" alt="" />
                                         <h5>Narx: 1 900 000 so'm</h5>
                                         <h4>101 440 <span>so‘mdan oyiga</span></h4>
@@ -56,7 +57,7 @@ const CartWishlist = () => {
                                                 <i className="icon icon-heart scales"></i>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

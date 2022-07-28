@@ -14,7 +14,7 @@ const Dashboard = () => {
                                 <a className="m-0" href="/pages/scoring"
                                 ><span>/</span> Shaxsiy kabinet
                                 </a>
-                                <a href="#!"><span>/</span> Kartalar - marketpleys ONZONE </a>
+                                <a href="#!"><span>/</span> Xaridlar - marketpleys ONZONE </a>
                             </div>
                         </div>
                         <div className="col-12">

@@ -8,11 +8,11 @@ const PersonalInfo = () => {
             <form className="personalWrap">
                 <div className="wrap">
                     <div className="inputDiv">
-                        <label for="name">Ism</label>
+                        <label htmlFor="name">Ism</label>
                         <input required id="name" type="text" className="form-control" />
                     </div>
                     <div className="inputDiv">
-                        <label for="surname">Familiya</label>
+                        <label htmlFor="surname">Familiya</label>
                         <input
                             required
                             id="surname"
@@ -24,11 +24,11 @@ const PersonalInfo = () => {
 
                 <div className="wrap">
                     <div className="inputDiv">
-                        <label for="name2">Otasini ismi</label>
+                        <label htmlFor="name2">Otasini ismi</label>
                         <input required id="name2" type="text" className="form-control" />
                     </div>
                     <div className="inputDiv">
-                        <label for="surname2">Email</label>
+                        <label htmlFor="surname2">Email</label>
                         <input
                             required
                             id="surname2"

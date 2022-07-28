@@ -6,6 +6,7 @@ import { Navigation } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 const NewProducts = () => {
     return (
@@ -46,7 +47,7 @@ const NewProducts = () => {
                 >
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="/image/new-products/2.png"
                                     className="swiper-lazy"
@@ -66,11 +67,11 @@ const NewProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/new-products/3.png"
                                     className="swiper-lazy"
@@ -90,11 +91,11 @@ const NewProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/new-products/4.png"
                                     className="swiper-lazy"
@@ -114,11 +115,11 @@ const NewProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/new-products/2.png"
                                     className="swiper-lazy"
@@ -138,11 +139,11 @@ const NewProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/new-products/1.png"
                                     className="swiper-lazy"
@@ -162,7 +163,7 @@ const NewProducts = () => {
                                         <div className="hearts icon icon-heart scales"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </SwiperSlide>
                     </div>
                 </Swiper>

@@ -6,6 +6,7 @@ import { Navigation } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 const SmartPhoneProducts = () => {
     return (
@@ -46,7 +47,7 @@ const SmartPhoneProducts = () => {
                 >
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
                                 <img
                                     src="/image/pop-category-01.jpg"
                                     className="swiper-lazy"
@@ -57,7 +58,7 @@ const SmartPhoneProducts = () => {
                                 <p>Смартфон Samsung Galaxy A21s 3/32GB Red</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
                             >
@@ -68,8 +69,8 @@ const SmartPhoneProducts = () => {
                             </div>
                         </SwiperSlide>
 
-                        <div className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                        <SwiperSlide className="swiper-slide d-flex flex-column">
+                            <Link className="myCard" to={'/product'}>
                                 <img
                                     src="image/popular-products/2.webp"
                                     className="swiper-lazy"
@@ -80,30 +81,7 @@ const SmartPhoneProducts = () => {
                                 <p>Смартфон Samsung Galaxy A12 32GB Black</p>
 
                                 <div className="line"></div>
-                            </a>
-                            <div
-                                className="pb-3 d-flex align-items-center justify-content-between w-100"
-                            >
-                                <h3>3 taklif</h3>
-                                <div className="heart scales">
-                                    <div className="hearts icon icon-heart scales"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
-                                <img
-                                    src="image/popular-products/3.webp"
-                                    className="swiper-lazy"
-                                    alt=""
-                                />
-                                <h5>Narx: 21 200 000 so'm</h5>
-                                <h4>1 131 780 <span> so‘mdan oyiga </span></h4>
-                                <p>Смартфон iPhone 12 Pro max 512GB Black (Dual)</p>
-
-                                <div className="line"></div>
-                            </a>
+                            </Link>
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
                             >
@@ -115,7 +93,30 @@ const SmartPhoneProducts = () => {
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a className="myCard" href="pages/product">
+                            <Link className="myCard" to={'/product'}>
+                                <img
+                                    src="image/popular-products/3.webp"
+                                    className="swiper-lazy"
+                                    alt=""
+                                />
+                                <h5>Narx: 21 200 000 so'm</h5>
+                                <h4>1 131 780 <span> so‘mdan oyiga </span></h4>
+                                <p>Смартфон iPhone 12 Pro max 512GB Black (Dual)</p>
+
+                                <div className="line"></div>
+                            </Link>
+                            <div
+                                className="pb-3 d-flex align-items-center justify-content-between w-100"
+                            >
+                                <h3>3 taklif</h3>
+                                <div className="heart scales">
+                                    <div className="hearts icon icon-heart scales"></div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="swiper-slide d-flex flex-column">
+                            <Link className="myCard" to={'/product'}>
                                 <img
                                     src="image/popular-products/4.webp"
                                     className="swiper-lazy"
@@ -126,7 +127,7 @@ const SmartPhoneProducts = () => {
                                 <p>Смартфон Samsung Galaxy A21s 3/32GB black</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
                             >

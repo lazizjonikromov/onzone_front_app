@@ -6,6 +6,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -34,36 +35,36 @@ const Header = () => {
 
                         <div className="swiper-wrapper">
                             <SwiperSlide className='swiper-slide'>
-                                <a href="pages/catalog/phone">
+                                <Link to={'/sub-multi-category'}>
                                     <img src="/image/header2.png" alt="" className="swiper-lazy" />
                                     <div
                                         className="swiper-lazy-preloader swiper-lazy-preloader-white"
                                     ></div>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                             <SwiperSlide className='swiper-slide'>
-                                <a href="pages/catalog/phone">
+                                <Link to={'/sub-multi-category'}>
                                     <img src="/image/header1.png" alt="" className="swiper-lazy" />
                                     <div
                                         className="swiper-lazy-preloader swiper-lazy-preloader-white"
                                     ></div>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                             <SwiperSlide className='swiper-slide'>
-                                <a href="pages/catalog/phone">
+                                <Link to={'/sub-multi-category'}>
                                     <img src="/image/617bf1de92d40.png" alt="" className="swiper-lazy" />
                                     <div
                                         className="swiper-lazy-preloader swiper-lazy-preloader-white"
                                     ></div>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                             <SwiperSlide className='swiper-slide'>
-                                <a href="pages/catalog/phone">
+                                <Link to={'/sub-multi-category'}>
                                     <img src="/image/617f835700f9f.png" alt="" className="swiper-lazy" />
                                     <div
                                         className="swiper-lazy-preloader swiper-lazy-preloader-white"
                                     ></div>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                         </div>
 

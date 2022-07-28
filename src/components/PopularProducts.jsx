@@ -6,6 +6,7 @@ import { Navigation } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 const PopularProducts = () => {
     return (
@@ -46,7 +47,7 @@ const PopularProducts = () => {
 
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a href="pages/product" className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="/image/pop-category-01.jpg"
                                     className="swiper-lazy"
@@ -57,7 +58,7 @@ const PopularProducts = () => {
                                 <p>Смартфон Samsung Galaxy A21s 3/32GB Red</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
                             <div
                                 className="d-flex align-items-center justify-content-between w-100"
                             >
@@ -69,7 +70,7 @@ const PopularProducts = () => {
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a href="pages/product" className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/new-products/3.png"
                                     className="swiper-lazy"
@@ -80,7 +81,7 @@ const PopularProducts = () => {
                                 <p>Смартфон Samsung A125 Galaxy A12 4/64Gb Blue</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
 
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
@@ -93,7 +94,7 @@ const PopularProducts = () => {
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a href="pages/product" className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/popular-products/2.webp"
                                     className="swiper-lazy"
@@ -104,7 +105,7 @@ const PopularProducts = () => {
                                 <p>Смартфон Samsung Galaxy A12 32GB Black</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
 
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
@@ -117,7 +118,7 @@ const PopularProducts = () => {
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a href="pages/product" className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/popular-products/3.webp"
                                     className="swiper-lazy"
@@ -128,7 +129,7 @@ const PopularProducts = () => {
                                 <p>Смартфон iPhone 12 Pro max 512GB Black (Dual)</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
 
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
@@ -141,7 +142,7 @@ const PopularProducts = () => {
                         </SwiperSlide>
 
                         <SwiperSlide className="swiper-slide d-flex flex-column">
-                            <a href="pages/product" className="myCard">
+                            <Link to={'/product'} className="myCard">
                                 <img
                                     src="image/popular-products/4.webp"
                                     className="swiper-lazy"
@@ -152,7 +153,7 @@ const PopularProducts = () => {
                                 <p>Смартфон Samsung Galaxy A21s 3/32GB black</p>
 
                                 <div className="line"></div>
-                            </a>
+                            </Link>
 
                             <div
                                 className="pb-3 d-flex align-items-center justify-content-between w-100"
