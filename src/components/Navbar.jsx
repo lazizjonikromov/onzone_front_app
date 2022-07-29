@@ -16,7 +16,8 @@ const Navbar = (args) => {
                 {/* Navigation */}
 
                 <div id="nav" className="nav-01">
-                    <Modal isOpen={modal_catalog} toggle={toggle} {...args} className={`fixedCatalog ${modal_catalog ? 'active' : ''}`} style={{maxWidth: '1800px', width: '100%'}}>
+                    {/* <Modal isOpen={modal_catalog} toggle={toggle} {...args} className={`fixedCatalog ${modal_catalog ? 'active' : ''}`} style={{maxWidth: '1800px', width: '100%'}}> */}
+                    <div className={`fixedCatalog ${modal_catalog ? 'active' : ''}`}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-4 myCol">
@@ -398,7 +399,8 @@ const Navbar = (args) => {
                                 </div>
                             </div>
                         </div>
-                    </Modal>
+                    </div>
+                    {/* </Modal> */}
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-1 col-md-3 col-4 p-lg-0">
@@ -457,6 +459,7 @@ const Navbar = (args) => {
                                             <div></div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                             {/* <div className="col-12">
