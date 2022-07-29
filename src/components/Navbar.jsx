@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faCartShopping, faGlobe, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/fontawesome-free-regular'
 import { faHandshake } from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom'
@@ -154,12 +154,11 @@ const Navbar = (args) => {
                                     <nav className="mobile">
                                         <h1>
                                             <a href="pages/add-card"
-                                            >Skoringdan o'tish <i className="far fa-credit-card"></i
-                                            ></a>
+                                            >Skoringdan o'tish <FontAwesomeIcon icon={faCreditCard} /> </a>
                                         </h1>
                                         <div className="world">
                                             Oʻzbekcha
-                                            <i className="fas ml-2 fa-angle-down"></i>
+                                            <FontAwesomeIcon icon={faAngleDown} />
 
                                             <div className="langWrap">
                                                 <a href="#">Русский</a>
@@ -441,10 +440,12 @@ const Navbar = (args) => {
                                         </div>
                                     </div>
                                     <Link to={'/cart'} className="cart">
+                                        {/* <FontAwesomeIcon icon={faCartShopping} /> */}
                                         <i className="icon icon-cart"></i>
                                         <h5>1</h5>
                                     </Link>
                                     <Link to={'/wishlist'} className="heart mobileContent">
+                                        {/* <FontAwesomeIcon icon={faHeart} /> */}
                                         <i className="icon icon-heart"></i>
                                         <h5>2</h5>
                                     </Link>
@@ -452,14 +453,14 @@ const Navbar = (args) => {
                                         <img src="/image/user.svg" alt="" />
                                     </Link>
 
-                                    <div id="mobileMenu" className="mobileMenu">
+                                    <div id="mobileMenu" onClick={toggle} className={`mobileMenu ${modal_catalog ? 'active' : ''}`}>
                                         <div className="line m-0">
                                             <div></div>
                                             <div></div>
                                             <div></div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             {/* <div className="col-12">
