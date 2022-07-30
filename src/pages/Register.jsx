@@ -13,8 +13,8 @@ const Register = () => {
                                 <h1>Ro'yxatdan o'tish</h1>
                                 <form action="POST">
                                     <div className="numberWrap">
-                                        <label for="phone">Sizning telefon raqamingiz *</label>
-                                        <label className="label" for="phone2">+998</label>
+                                        <label htmlFor="phone">Sizning telefon raqamingiz *</label>
+                                        <label className="label" htmlFor="phone2">+998</label>
                                         <input
                                             required
                                             type="number"
@@ -23,7 +23,7 @@ const Register = () => {
                                         />
                                     </div>
 
-                                    <label for="password1">Установите пароль *</label>
+                                    <label htmlFor="password1">Установите пароль *</label>
                                     <input
                                         required
                                         type="password"
@@ -31,7 +31,7 @@ const Register = () => {
                                         id="password1"
                                     />
 
-                                    <label for="password">Parol tasdiqlang *</label>
+                                    <label htmlFor="password">Parol tasdiqlang *</label>
                                     <input
                                         required
                                         type="password"
@@ -43,7 +43,7 @@ const Register = () => {
                                     <div className="checkWrap">
                                         <div className="wrap">
                                             <input type="checkbox" name="" id="check1" />
-                                            <label for="check1">
+                                            <label htmlFor="check1">
                                                 Men <a href="/pages/oferta" >Saytdan foydalanish shartlari</a> ni o'qib chiqdim va roziman
                                                 <span>&#10004;</span></label>
                                         </div>

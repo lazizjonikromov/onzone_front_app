@@ -4,12 +4,20 @@ import { faAngleDown, faCartShopping, faGlobe, faHeart } from '@fortawesome/free
 import { faCreditCard } from '@fortawesome/fontawesome-free-regular'
 import { faHandshake } from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Nav, NavItem, NavLink, Row, TabPane, TabContent } from 'reactstrap';
+import classnames from 'classnames';
 
 const Navbar = (args) => {
     const [modal_catalog, setModal] = useState(false);
 
     const toggle = () => setModal(!modal_catalog);
+
+    const [activeTab, setActiveTab] = useState('1');
+
+    const toggle2 = tab => {
+        if (activeTab !== tab) setActiveTab(tab);
+    }
+
     return (
         <>
             <div className="Navbar">
@@ -22,133 +30,116 @@ const Navbar = (args) => {
                             <div className="row">
                                 <div className="col-lg-4 myCol">
                                     <nav className="desktop">
-                                        <div className="nav nav-tabs myNav" id="nav-tab" role="tablist">
-                                            <a
-                                                className="nav-link active"
-                                                id="nav-home-tab"
-                                                data-toggle="tab"
-                                                href="#phone"
-                                                role="tab"
-                                                aria-controls="phone"
-                                                aria-selected="true"
-                                            >
-                                                <span>Telefonlar va gadjetlar</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <a
-                                                className="nav-link"
-                                                id="nav-profile-tab"
-                                                data-toggle="tab"
-                                                href="#home"
-                                                role="tab"
-                                                aria-controls="home"
-                                                aria-selected="false"
-                                            >
-                                                <span>Yirik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/2.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/3.png" alt="" />
-                                                </span>
-                                            </a>
+                                        <Nav tabs className="nav nav-tabs myNav" id="nav-tab" role="tablist">
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '1' })}
+                                                    onClick={() => { toggle2('1'); }}
+                                                >
+                                                    <span>Telefonlar va gadjetlar</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/1.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
 
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab2"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/8.png" alt="" />
-                                                </span>
-                                            </a>
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '2' })}
+                                                    onClick={() => { toggle2('2'); }}
+                                                >
+                                                    <span>Yirik maishiy texnika</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/2.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
 
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab3"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/7.png" alt="" />
-                                                </span>
-                                            </a>
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '3' })}
+                                                    onClick={() => { toggle2('3'); }}
+                                                >
+                                                    <span>Kichik maishiy texnika</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/3.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
 
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab4"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/4.png" alt="" />
-                                                </span>
-                                            </a>
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '4' })}
+                                                    onClick={() => { toggle2('4'); }}
+                                                >
+                                                    <span>Oshxona texnikasi</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/8.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
 
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab5"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/5.png" alt="" />
-                                                </span>
-                                            </a>
 
-                                            <a
-                                                className="nav-link"
-                                                id="nav-contact-tab6"
-                                                data-toggle="tab"
-                                                href="#tv"
-                                                role="tab"
-                                                aria-controls="tv"
-                                                aria-selected="false"
-                                            >
-                                                <span>Kichik maishiy texnika</span>
-                                                <i className="i"></i>
-                                                <span className="imgSpan">
-                                                    <img src="/image/popular/6.png" alt="" />
-                                                </span>
-                                            </a>
-                                        </div>
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '5' })}
+                                                    onClick={() => { toggle2('5'); }}
+                                                >
+                                                    <span>O‘rnatiluvchi texnika</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/7.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
+
+
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '6' })}
+                                                    onClick={() => { toggle2('6'); }}
+                                                >
+                                                    <span>Klimat uskunalari</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/4.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
+
+
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '7' })}
+                                                    onClick={() => { toggle2('7'); }}
+                                                >
+                                                    <span>Tikuv mashinalari</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/5.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
+
+
+                                            <NavItem>
+                                                <NavLink
+                                                    className={classnames({ active: activeTab === '8' })}
+                                                    onClick={() => { toggle2('8'); }}
+                                                >
+                                                    <span>Televizor/Video/Audio</span>
+                                                    <i className="i"></i>
+                                                    <span className="imgSpan">
+                                                        <img src="/image/popular/6.png" alt="" />
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
+
+                                        </Nav>
                                     </nav>
 
                                     <nav className="mobile">
@@ -232,14 +223,14 @@ const Navbar = (args) => {
                                     </nav>
                                 </div>
                                 <div className="col-8 d-none d-lg-block">
-                                    <div className="tab-content" id="nav-tabContent">
-                                        <div
-                                            className="tab-pane fade show active"
-                                            id="phone"
-                                            role="tabpanel"
-                                            aria-labelledby="phone"
+                                    <TabContent activeTab={activeTab}>
+                                        <TabPane tabId="1"
+                                            className="tab-pane fade show"
+                                        // id="phone"
+                                        // role="tabpanel"
+                                        // aria-labelledby="phone"
                                         >
-                                            <div className="row">
+                                            <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
                                                         <a href="/pages/all-category"
@@ -286,15 +277,15 @@ const Navbar = (args) => {
                                                             /></a>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className="tab-pane fade"
-                                            id="home"
-                                            role="tabpanel"
-                                            aria-labelledby="home"
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="2"
+                                            className="tab-pane fade show"
+                                        // id="home"
+                                        // role="tabpanel"
+                                        // aria-labelledby="home"
                                         >
-                                            <div className="row">
+                                            <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
                                                         <a href="/pages/all-category">Yirik maishiy texnika</a>
@@ -339,15 +330,15 @@ const Navbar = (args) => {
                                                             /></a>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className="tab-pane fade"
-                                            id="tv"
-                                            role="tabpanel"
-                                            aria-labelledby="tv"
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="3"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
                                         >
-                                            <div className="row">
+                                            <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
                                                         <a href="/pages/all-category">Kichik maishiy texnika</a>
@@ -392,9 +383,274 @@ const Navbar = (args) => {
                                                             /></a>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="4"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
+                                        >
+                                            <Row className="row">
+                                                <div className="col-12">
+                                                    <h1>
+                                                        <a href="/pages/all-category">Oshxona texnikasi</a>
+                                                    </h1>
+                                                </div>
+                                                <div className="col-9 d-flex">
+                                                    <div className="mr-5">
+                                                        <a href="#"><b>Planshetlar</b></a>
+
+                                                        <a href="#"
+                                                        ><b>Smartfon va telefonlar uchun aksessuarlar</b></a
+                                                        >
+                                                        <a href="#">Simsiz zaryadkalash moslamalari</a>
+                                                        <a href="#">Aqlli qo‘l soatlari va brasletlar</a>
+                                                        <a href="#">Sizsiz quloqchinlar</a>
+                                                        <a href="#">Tashqi akkumulyatorlar (Power bank)</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#"><b>Telefonlar</b></a>
+                                                        <a href="#">Smartfonlar</a>
+                                                        <a href="#">Radiotelefonlar</a>
+
+                                                        <a href="#"><b>Elektron kitoblar</b></a>
+                                                        <a href="#"><b>Fakslar</b></a>
+                                                        <a href="#"><b>Grafik planshetlar</b></a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-3 right">
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed1.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed2.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed3.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="5"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
+                                        >
+                                            <Row className="row">
+                                                <div className="col-12">
+                                                    <h1>
+                                                        <a href="/pages/all-category">O‘rnatiluvchi texnika</a>
+                                                    </h1>
+                                                </div>
+                                                <div className="col-9 d-flex">
+                                                    <div className="mr-5">
+                                                        <a href="#"><b>Planshetlar</b></a>
+
+                                                        <a href="#"
+                                                        ><b>Smartfon va telefonlar uchun aksessuarlar</b></a
+                                                        >
+                                                        <a href="#">Simsiz zaryadkalash moslamalari</a>
+                                                        <a href="#">Aqlli qo‘l soatlari va brasletlar</a>
+                                                        <a href="#">Sizsiz quloqchinlar</a>
+                                                        <a href="#">Tashqi akkumulyatorlar (Power bank)</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#"><b>Telefonlar</b></a>
+                                                        <a href="#">Smartfonlar</a>
+                                                        <a href="#">Radiotelefonlar</a>
+
+                                                        <a href="#"><b>Elektron kitoblar</b></a>
+                                                        <a href="#"><b>Fakslar</b></a>
+                                                        <a href="#"><b>Grafik planshetlar</b></a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-3 right">
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed1.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed2.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed3.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="6"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
+                                        >
+                                            <Row className="row">
+                                                <div className="col-12">
+                                                    <h1>
+                                                        <a href="/pages/all-category">Klimat uskunalari</a>
+                                                    </h1>
+                                                </div>
+                                                <div className="col-9 d-flex">
+                                                    <div className="mr-5">
+                                                        <a href="#"><b>Planshetlar</b></a>
+
+                                                        <a href="#"
+                                                        ><b>Smartfon va telefonlar uchun aksessuarlar</b></a
+                                                        >
+                                                        <a href="#">Simsiz zaryadkalash moslamalari</a>
+                                                        <a href="#">Aqlli qo‘l soatlari va brasletlar</a>
+                                                        <a href="#">Sizsiz quloqchinlar</a>
+                                                        <a href="#">Tashqi akkumulyatorlar (Power bank)</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#"><b>Telefonlar</b></a>
+                                                        <a href="#">Smartfonlar</a>
+                                                        <a href="#">Radiotelefonlar</a>
+
+                                                        <a href="#"><b>Elektron kitoblar</b></a>
+                                                        <a href="#"><b>Fakslar</b></a>
+                                                        <a href="#"><b>Grafik planshetlar</b></a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-3 right">
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed1.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed2.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed3.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="7"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
+                                        >
+                                            <Row className="row">
+                                                <div className="col-12">
+                                                    <h1>
+                                                        <a href="/pages/all-category">Tikuv mashinalari</a>
+                                                    </h1>
+                                                </div>
+                                                <div className="col-9 d-flex">
+                                                    <div className="mr-5">
+                                                        <a href="#"><b>Planshetlar</b></a>
+
+                                                        <a href="#"
+                                                        ><b>Smartfon va telefonlar uchun aksessuarlar</b></a
+                                                        >
+                                                        <a href="#">Simsiz zaryadkalash moslamalari</a>
+                                                        <a href="#">Aqlli qo‘l soatlari va brasletlar</a>
+                                                        <a href="#">Sizsiz quloqchinlar</a>
+                                                        <a href="#">Tashqi akkumulyatorlar (Power bank)</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#"><b>Telefonlar</b></a>
+                                                        <a href="#">Smartfonlar</a>
+                                                        <a href="#">Radiotelefonlar</a>
+
+                                                        <a href="#"><b>Elektron kitoblar</b></a>
+                                                        <a href="#"><b>Fakslar</b></a>
+                                                        <a href="#"><b>Grafik planshetlar</b></a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-3 right">
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed1.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed2.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed3.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tabId="8"
+                                            className="tab-pane fade show"
+                                        // id="tv"
+                                        // role="tabpanel"
+                                        // aria-labelledby="tv"
+                                        >
+                                            <Row className="row">
+                                                <div className="col-12">
+                                                    <h1>
+                                                        <a href="/pages/all-category">Televizor/Video/Audio</a>
+                                                    </h1>
+                                                </div>
+                                                <div className="col-9 d-flex">
+                                                    <div className="mr-5">
+                                                        <a href="#"><b>Planshetlar</b></a>
+
+                                                        <a href="#"
+                                                        ><b>Smartfon va telefonlar uchun aksessuarlar</b></a
+                                                        >
+                                                        <a href="#">Simsiz zaryadkalash moslamalari</a>
+                                                        <a href="#">Aqlli qo‘l soatlari va brasletlar</a>
+                                                        <a href="#">Sizsiz quloqchinlar</a>
+                                                        <a href="#">Tashqi akkumulyatorlar (Power bank)</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#"><b>Telefonlar</b></a>
+                                                        <a href="#">Smartfonlar</a>
+                                                        <a href="#">Radiotelefonlar</a>
+
+                                                        <a href="#"><b>Elektron kitoblar</b></a>
+                                                        <a href="#"><b>Fakslar</b></a>
+                                                        <a href="#"><b>Grafik planshetlar</b></a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-3 right">
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed1.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed2.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                    <div className="img">
+                                                        <a href="#"
+                                                        ><img className="w-100" src="/image/fixed3.png" alt=""
+                                                            /></a>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                        </TabPane>
+                                    </TabContent>
                                 </div>
                             </div>
                         </div>
