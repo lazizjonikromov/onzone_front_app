@@ -144,8 +144,8 @@ const Navbar = (args) => {
 
                                     <nav className="mobile">
                                         <h1>
-                                            <a href="pages/add-card"
-                                            >Skoringdan o'tish <FontAwesomeIcon icon={faCreditCard} /> </a>
+                                            <Link to={'/add-card'}
+                                            >Skoringdan o'tish <FontAwesomeIcon icon={faCreditCard} /> </Link>
                                         </h1>
                                         <div className="world">
                                             Oʻzbekcha
@@ -158,67 +158,67 @@ const Navbar = (args) => {
                                         </div>
                                         <h2>Katalog</h2>
                                         <div className="nav nav-tabs myNav">
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Telefonlar va gadjetlar</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/1.png" alt="" />
                                                 </span>
-                                            </a>
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            </Link>
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Yirik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/2.png" alt="" />
                                                 </span>
-                                            </a>
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            </Link>
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/3.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
 
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/8.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
 
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/7.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
 
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/4.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
 
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/5.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
 
-                                            <a className="nav-link" href="pages/catalog/phone">
+                                            <Link className="nav-link" to={'/sub-multi-category'}>
                                                 <span>Kichik maishiy texnika</span>
                                                 <i className="i"></i>
                                                 <span className="imgSpan">
                                                     <img src="/image/popular/6.png" alt="" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </nav>
                                 </div>
@@ -233,9 +233,8 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category"
-                                                        >Telefonlar va gadjetlar</a
-                                                        >
+                                                        <Link to={'/sub-multi-category'}
+                                                        >Telefonlar va gadjetlar</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -288,7 +287,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Yirik maishiy texnika</a>
+                                                        <Link to={'/sub-multi-category'}>Yirik maishiy texnika</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -341,7 +340,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Kichik maishiy texnika</a>
+                                                        <Link to={'/sub-multi-category'}>Kichik maishiy texnika</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -394,7 +393,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Oshxona texnikasi</a>
+                                                        <Link to={'/sub-multi-category'}>Oshxona texnikasi</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -447,7 +446,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">O‘rnatiluvchi texnika</a>
+                                                        <Link to={'/sub-multi-category'}>O‘rnatiluvchi texnika</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -500,7 +499,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Klimat uskunalari</a>
+                                                        <Link to={'/sub-multi-category'}>Klimat uskunalari</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -553,7 +552,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Tikuv mashinalari</a>
+                                                        <Link to={'/sub-multi-category'}>Tikuv mashinalari</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">
@@ -606,7 +605,7 @@ const Navbar = (args) => {
                                             <Row className="row">
                                                 <div className="col-12">
                                                     <h1>
-                                                        <a href="/pages/all-category">Televizor/Video/Audio</a>
+                                                        <Link to={'/sub-multi-category'}>Televizor/Video/Audio</Link>
                                                     </h1>
                                                 </div>
                                                 <div className="col-9 d-flex">

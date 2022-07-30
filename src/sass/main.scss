@@ -185,9 +185,10 @@ body {
                     }
                 }
 
-                i {
-                    font-size: 18px;
+                .fa-angle-down {
+                    font-size: 16px;
                     color: $red;
+                    margin-left: 10px;
 
                     &:nth-child(2) {
                         margin-left: 6px;

@@ -37,18 +37,18 @@ const Footer = () => {
                                         >Mijozlar uchun oferta</Link>
                                     </li>
                                     <li>
-                                        <a className="footer__links" href="faq/how-to-sell"
-                                        >Xarid va to`lov</a>
+                                        <Link className="footer__links" to={'/question/payment'}
+                                        >Xarid va to`lov</Link>
                                     </li>
                                     <li>
-                                        <a className="footer__links" href="faq/seller"
-                                        >Mahsulotni qaytarish va almashtirish</a>
+                                        <Link className="footer__links" to={'/question/exchange'}
+                                        >Mahsulotni qaytarish va almashtirish</Link>
                                     </li>
                                     <li>
-                                        <a className="footer__links" href="faq/return-and-exchange"
-                                        >Yetkazib berish</a>
+                                        <Link className="footer__links" to={'/question/delivery'}
+                                        >Yetkazib berish</Link>
                                     </li>
-                                    <li><a className="footer__links" href="faq/credit">Kredit</a></li>
+                                    <li><Link className="footer__links" to={'/question/credit'}>Kredit</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                                 <h6 className="footer__title">Hamkorlar uchun</h6>
                                 <ul>
                                     <li>
-                                        <a className="footer__links" href="faq/seller">Sotuvchilarga</a>
+                                        <Link className="footer__links" to={'/question/sellers'}>Sotuvchilarga</Link>
                                     </li>
                                     <li>
                                         <Link className="footer__links" to={'/cooperation'}
