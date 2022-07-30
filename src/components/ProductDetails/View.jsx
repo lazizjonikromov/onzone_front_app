@@ -1,7 +1,24 @@
 import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+
+import "@fancyapps/ui/dist/fancybox.css";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination, Navigation, Thumbs } from "swiper";
 
 const View = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
         <>
             <section className="view">
@@ -24,31 +41,55 @@ const View = () => {
                                     <div className="row flex-column-reverse flex-lg-row flex-md-row">
 
                                         <div className="col-lg-1 col-md-2 leftCol">
-                                            <div className="swiper productSwiper">
+                                            <Swiper
+                                                onSwiper={setThumbsSwiper}
+                                                spaceBetween={10}
+                                                slidesPerView={4}
+                                                freeMode={true}
+                                                watchSlidesProgress={true}
+                                                modules={[FreeMode, Navigation, Thumbs]}
+                                                className="swiper productSwiper">
+
                                                 <div className="swiper-wrapper d-flex flex-column">
-                                                    <div className="swiper-slide">
+                                                    <SwiperSlide className="swiper-slide">
                                                         <img src="/image/viewProduct/1.png" />
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <img src="/image/viewProduct/2.webp" />
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <img src="/image/viewProduct/3.png" />
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <img src="/image/viewProduct/4.png" />
-                                                    </div>
+                                                    </SwiperSlide>
                                                 </div>
-                                            </div>
+
+                                            </Swiper>
                                         </div>
 
                                         <div className="col-lg-6 col-md-8 midCol">
-                                            <div className="swiper productSwiper2">
+                                            <Swiper
+                                                style={{
+                                                    "--swiper-navigation-color": "#fff",
+                                                    "--swiper-pagination-color": "#fff",
+                                                }}
+                                                pagination={{
+                                                    el: ".swiper-pagination",
+                                                    dynamicBullets: true,
+                                                }}
+                                                navigation={{
+                                                    prevEl: '.swiper-button-prev',
+                                                    nextEl: '.swiper-button-next',
+                                                }}
+                                                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                                                modules={[FreeMode, Pagination, Navigation, Thumbs]}
+                                                className="swiper productSwiper2">
                                                 <div className="img">
                                                     <i className="icon icon-heart"></i>
                                                 </div>
                                                 <div className="swiper-wrapper">
-                                                    <div className="swiper-slide">
+                                                    <SwiperSlide className="swiper-slide">
                                                         <a
                                                             href="/image/viewProduct/1.png"
                                                             data-fancybox="gallery"
@@ -56,8 +97,8 @@ const View = () => {
                                                         >
                                                             <img src="/image/viewProduct/1.png" />
                                                         </a>
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <a
                                                             href="/image/viewProduct/2.webp"
                                                             data-fancybox="gallery"
@@ -65,8 +106,8 @@ const View = () => {
                                                         >
                                                             <img src="/image/viewProduct/2.webp" />
                                                         </a>
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <a
                                                             href="/image/viewProduct/3.png"
                                                             data-fancybox="gallery"
@@ -74,8 +115,8 @@ const View = () => {
                                                         >
                                                             <img src="/image/viewProduct/3.png" />
                                                         </a>
-                                                    </div>
-                                                    <div className="swiper-slide">
+                                                    </SwiperSlide>
+                                                    <SwiperSlide className="swiper-slide">
                                                         <a
                                                             href="/image/viewProduct/4.png"
                                                             data-fancybox="gallery"
@@ -83,11 +124,11 @@ const View = () => {
                                                         >
                                                             <img src="/image/viewProduct/4.png" />
                                                         </a>
-                                                    </div>
+                                                    </SwiperSlide>
                                                 </div>
                                                 <div className="swiper-button-next"></div>
                                                 <div className="swiper-button-prev"></div>
-                                            </div>
+                                            </Swiper>
                                             <div className="swiper-pagination"></div>
                                         </div>
 

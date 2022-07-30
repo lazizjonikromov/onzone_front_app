@@ -1546,7 +1546,7 @@ body {
         }
 
         .swiper-wrapper {
-
+            
             @media(max-width: 767px) {}
         }
 
@@ -1605,7 +1605,9 @@ body {
             display: flex;
 
             .swiper-wrapper {
-
+                display: flex;
+                flex-direction: column;
+                
                 @media(max-width: 767px) {
                     height: 95px !important;
                     flex-direction: row !important;
@@ -1714,6 +1716,7 @@ body {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    user-select: none;
                 }
             }
 
