@@ -34,7 +34,7 @@ const SmartPhoneProducts = () => {
                         },
                         1480: {
                             spaceBetween: 45,
-                        },
+                        }
                     }}
                     spaceBetween={30}
                     navigation={{
